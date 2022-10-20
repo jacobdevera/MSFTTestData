@@ -4,7 +4,7 @@
       {
         "manifestVersion": "1.7",
         "id": "com.microsoft.teamspace.tab.planner",
-        "version": "1.2.6",
+        "version": "1.2.9",
         "name": "Tasks by Planner and To Do",
         "accentColor": "#6264A7",
         "activities": {
