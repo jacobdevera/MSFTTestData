@@ -4,7 +4,7 @@
       {
         "manifestVersion": "1.7",
         "id": "com.microsoft.teamspace.tab.planner",
-        "version": "1.2.8",
+        "version": "1.2.6",
         "name": "Tasks by Planner and To Do",
         "accentColor": "#6264A7",
         "activities": {
@@ -41,6 +41,16 @@
             }
           ]
         },
+        "bots": [
+          {
+            "id": "d0d939d5-edca-47cc-993e-782e66aec9c7",
+            "isNotificationOnly": true,
+            "scopes": [
+              "personal",
+              "team"
+            ]
+          }
+        ],
         "categories": ["Microsoft", "Productivity", "ProjectManagement"],
         "developerName": "Microsoft Corporation",
         "developerUrl": "https://aka.ms/TasksApp",
@@ -53,6 +63,35 @@
           }
         ],
         "industries": ["Other"],
+        "inputExtensions": [
+          {
+            "botId": "com.microsoft.teamspace.tab.planner",
+            "commands": [
+              {
+                "context": [
+                  "message"
+                ],
+                "description": "Create a task from a chat or a channel post.",
+                "fetchTask": false,
+                "id": "createTaskFromMessage",
+                "initialRun": false,
+                "taskInfo": {
+                  "height": "452",
+                  "title": "Create task",
+                  "url": "https://tasks.teams.microsoft.com/teamsui/messageTasks?parentMessageId={parentMessageId}&groupId={groupId}&teamId={teamId}&channelId={channelId}&entityId=messagetasks&tid={tid}&userObjectId={userObjectId}&tasksAppFlavor=planner&sessionId={sessionId}&theme={theme}&locale={locale}&ringId={ringId}",
+                  "width": "800"
+                },
+                "title": "Create task",
+                "type": "action"
+              }
+            ],
+            "fetchCommands": false,
+            "scopes": [
+              "team",
+              "personal"
+            ]
+          }
+        ],
         "isFullScreen": true,
         "isFullTrust": true,
         "isTeamsOwned": true,
