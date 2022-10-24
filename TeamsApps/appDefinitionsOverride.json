@@ -16,6 +16,29 @@
             }
           ]
         },
+        "bots": [
+          {
+            "botId": "57913612-7ed4-4874-9adc-94d2588ecf5e",
+            "scopes": ["personal", "team", "groupchat"],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+              {
+                "scopes": ["personal", "team", "groupchat"],
+                "commands": [
+                  {
+                    "title": "welcome",
+                    "description": "Resend welcome card of this Bot"
+                  },
+                  {
+                    "title": "learn",
+                    "description": "Learn about Adaptive Card and Bot Command"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "categories": [
           "ContentManagement",
           "FilesAndDocuments",
