@@ -4,7 +4,7 @@
       {
         "manifestVersion": "devPreview",
         "id": "0d820ecd-def2-4297-adad-78056cde7c78",
-        "version": "1.0.2",
+        "version": "1.0.5",
         "name": "OneNote",
         "accentColor": "#641790",
         "activities": {
@@ -16,29 +16,6 @@
             }
           ]
         },
-        "bots": [
-          {
-            "botId": "57913612-7ed4-4874-9adc-94d2588ecf5e",
-            "scopes": ["personal", "team", "groupchat"],
-            "supportsFiles": false,
-            "isNotificationOnly": false,
-            "commandLists": [
-              {
-                "scopes": ["personal", "team", "groupchat"],
-                "commands": [
-                  {
-                    "title": "welcome",
-                    "description": "Resend welcome card of this Bot"
-                  },
-                  {
-                    "title": "learn",
-                    "description": "Learn about Adaptive Card and Bot Command"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "categories": [
           "ContentManagement",
           "FilesAndDocuments",
@@ -47,71 +24,129 @@
           "Microsoft"
         ],
         "developerName": "Microsoft Corporation",
-        "developerUrl": "http://www.onenote.osi.eaglex.ic.gov/",
-        "devicePermissions": ["Media"],
+        "developerUrl": "http://www.onenote.com/",
+        "devicePermissions": [
+          "Media"
+        ],
         "galleryTabs": [
           {
-            "configurationUrl": "https://onenote.osi.eaglex.ic.gov/teams/tabconfig?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&teamSiteUrl={teamSiteUrl}&channelType={channelType}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "scopes": ["Team", "GroupChat"]
+            "canHaveTabConversation": false,
+            "canUpdateConfiguration": false,
+            "configurationUrl": "https://www.onenote.com/teams/tabconfig?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&teamSiteUrl={teamSiteUrl}&channelType={channelType}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "context": [
+              "channelTab",
+              "privateChatTab",
+              "meetingChatTab",
+              "meetingDetailsTab",
+              "meetingStage"
+            ],
+            "scopes": [
+              "team",
+              "groupChat"
+            ]
           }
         ],
+        "isFullScreen": false,
         "isFullTrust": true,
         "isTeamsOwned": true,
         "isTenantConfigurable": true,
         "languageTag": "en-us",
-        "largeImageUrl": "https://statics.teams.eaglex.ic.gov/evergreen-assets/apps/OneNote_v3_largeimage.png?v=1.0.0",
+        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_largeImage.png?v=1.0.5",
         "longDescription": "Use OneNote to collaborate on digital notes and notebooks and share them with your team.",
-        "permissions": ["Identity", "MessageTeamMembers"],
+        "permissions": [
+          "Identity",
+          "MessageTeamMembers"
+        ],
         "privacyUrl": "https://privacy.microsoft.com/privacystatement",
-        "publisherType": "SecondParty",
+        "publisherType": "FirstParty",
         "screenshotUrls": [
-          "https://statics.teams.eaglex.ic.gov/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/1.png",
-          "https://statics.teams.eaglex.ic.gov/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/2.png"
+          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/1.png",
+          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/2.png"
         ],
         "shortDescription": "Use OneNote to collaborate on digital notes and notebooks with your team.",
-        "smallImageUrl": "https://statics.teams.eaglex.ic.gov/evergreen-assets/apps/onenote_v2_smallimage.png?v=1.0.0",
+        "showLoadingIndicator": false,
+        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_smallImage.png?v=1.0.5",
         "staticTabs": [
           {
-            "contentUrl": "https://onenote.osi.eaglex.ic.gov/teams/mynotebook?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "contentUrl": "https://www.onenote.com/notes?embeddingApp=OneNoteStaticTab&ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "entityId": "MeetingsLandingPage",
+            "name": "Meeting Notes",
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
+          },
+          {
+            "contentUrl": "https://www.onenote.com/teams/mynotebook?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "MyNotebook",
-            "name": "Personal",
-            "scopes": ["Personal"],
-            "supportedPlatform": ["mobile", "desktop", "teamsMeetingDevices"]
+            "name": "My Notebook",
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "mobile",
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           },
           {
-            "contentUrl": "https://onenote.osi.eaglex.ic.gov/teams/recent?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "contentUrl": "https://www.onenote.com/teams/recent?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "RecentNotebooks",
-            "name": "Recent",
-            "scopes": ["Personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+            "name": "Recent Notebooks",
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           },
           {
-            "contentUrl": "https://onenote.osi.eaglex.ic.gov/teams/teamNotebooks?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "contentUrl": "https://www.onenote.com/teams/teamNotebooks?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "TeamNotebooks",
-            "name": "Teams",
-            "scopes": ["Personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
-          },
-          {
-            "entityId": "index",
-            "name": "Personal Tab",
-            "contentUrl": "https://nonessotabdev4056f5tab.z22.web.core.windows.net/index.html#/tab",
-            "websiteUrl": "https://nonessotabdev4056f5tab.z22.web.core.windows.net/index.html#/tab",
-            "scopes": ["personal"]
+            "name": "Team Notebooks",
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           }
         ],
-        "supportedTenantRegions": ["AG08"],
+        "supportedTenantRegions": [
+          "GCC",
+          "GCCH"
+        ],
         "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
         "validDomains": [
-          "*.eaglex.ic.gov",
-          "nonessotabdev4056f5tab.z22.web.core.windows.net",
-          "helloworlddev1e4d70bot.azurewebsites.net"
+          "*.sharepoint.com",
+          "*.sharepoint.cn",
+          "*.sharepoint.de",
+          "*.sharepoint.us",
+          "*.sharepoint-mil.us",
+          "*.sharepoint-df.com",
+          "*.sharepointonline.com",
+          "*.onenote.com",
+          "*.office.com",
+          "*.office365.com",
+          "*.office365.cn",
+          "*.office.de",
+          "*.live.com",
+          "*.microsoft.com",
+          "onenote.com"
         ],
         "videoUrl": "https://www.youtube.com/watch?v=fmGVp76WyIU",
         "webApplicationInfo": {
           "id": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
-          "resource": "https://onenote.osi.eaglex.ic.gov/"
-        }
+          "resource": "https://onenote.com/"
+        },
+        "supportedLanguages": [
+          "en-us"
+        ]
       }
     ]
   }
