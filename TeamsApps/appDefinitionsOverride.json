@@ -4,7 +4,7 @@
       {
         "manifestVersion": "devPreview",
         "id": "0d820ecd-def2-4297-adad-78056cde7c78",
-        "version": "1.0.6",
+        "version": "1.0.5",
         "name": "OneNote",
         "accentColor": "#641790",
         "activities": {
@@ -16,29 +16,27 @@
             }
           ]
         },
-        "inputExtensions": [
+        "bots": [
           {
-            "botId": "00000000-0000-0000-0000-000000000000",
-            "canUpdateConfiguration": false,
-            "commands": [
+            "botId": "57913612-7ed4-4874-9adc-94d2588ecf5e",
+            "scopes": ["personal", "team", "groupchat"],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
               {
-                "context": ["message"],
-                "description": "Create a task from a chat or a channel post.",
-                "fetchTask": false,
-                "id": "createTaskFromMessage",
-                "initialRun": false,
-                "taskInfo": {
-                  "height": "452",
-                  "title": "Create task",
-                  "url": "https://www.onenote.com",
-                  "width": "800"
-                },
-                "title": "Create task",
-                "type": "action"
+                "scopes": ["personal", "team", "groupchat"],
+                "commands": [
+                  {
+                    "title": "welcome",
+                    "description": "Resend welcome card of this Bot"
+                  },
+                  {
+                    "title": "learn",
+                    "description": "Learn about Adaptive Card and Bot Command"
+                  }
+                ]
               }
-            ],
-            "fetchCommands": false,
-            "scopes": ["team", "personal"]
+            ]
           }
         ],
         "categories": [
@@ -50,7 +48,9 @@
         ],
         "developerName": "Microsoft Corporation",
         "developerUrl": "http://www.onenote.com/",
-        "devicePermissions": ["Media"],
+        "devicePermissions": [
+          "Media"
+        ],
         "galleryTabs": [
           {
             "canHaveTabConversation": false,
@@ -63,7 +63,10 @@
               "meetingDetailsTab",
               "meetingStage"
             ],
-            "scopes": ["team", "groupChat"]
+            "scopes": [
+              "team",
+              "groupChat"
+            ]
           }
         ],
         "isFullScreen": false,
@@ -73,7 +76,10 @@
         "languageTag": "en-us",
         "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_largeImage.png?v=1.0.5",
         "longDescription": "Use OneNote to collaborate on digital notes and notebooks and share them with your team.",
-        "permissions": ["Identity", "MessageTeamMembers"],
+        "permissions": [
+          "Identity",
+          "MessageTeamMembers"
+        ],
         "privacyUrl": "https://privacy.microsoft.com/privacystatement",
         "publisherType": "FirstParty",
         "screenshotUrls": [
@@ -88,32 +94,56 @@
             "contentUrl": "https://www.onenote.com/notes?embeddingApp=OneNoteStaticTab&ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "MeetingsLandingPage",
             "name": "Meeting Notes",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           },
           {
             "contentUrl": "https://www.onenote.com/teams/mynotebook?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "MyNotebook",
             "name": "My Notebook",
-            "scopes": ["personal"],
-            "supportedPlatform": ["mobile", "desktop", "teamsMeetingDevices"]
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "mobile",
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           },
           {
             "contentUrl": "https://www.onenote.com/teams/recent?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "RecentNotebooks",
             "name": "Recent Notebooks",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           },
           {
             "contentUrl": "https://www.onenote.com/teams/teamNotebooks?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
             "entityId": "TeamNotebooks",
             "name": "Team Notebooks",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+            "scopes": [
+              "personal"
+            ],
+            "supportedPlatform": [
+              "desktop",
+              "teamsMeetingDevices"
+            ]
           }
         ],
-        "supportedTenantRegions": ["GCC", "GCCH"],
+        "supportedTenantRegions": [
+          "GCC",
+          "GCCH"
+        ],
         "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
         "validDomains": [
           "*.sharepoint.com",
@@ -137,7 +167,9 @@
           "id": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
           "resource": "https://onenote.com/"
         },
-        "supportedLanguages": ["en-us"]
+        "supportedLanguages": [
+          "en-us"
+        ]
       }
     ]
   }
