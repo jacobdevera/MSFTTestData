@@ -50,7 +50,7 @@
         ],
         "developerName": "Microsoft Corporation",
         "developerUrl": "http://www.onenote.com/",
-        "devicePermissions": ["Media"],
+        "devicePermissions": ["Media", "notifications", "midi", "openExternal"],
         "galleryTabs": [
           {
             "canHaveTabConversation": false,
