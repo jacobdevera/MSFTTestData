@@ -9,40 +9,6 @@
         "languageTag": "en",
         "privacyUrl": "https://www.microsoft.com/privacy",
         "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
-        "bots": [
-          {
-            "id": "0af95b67-5890-4306-9c1c-a8591cead09e",
-            "scopes": ["groupchat", "team", "personal"],
-            "commandLists": [
-              {
-                "commands": [
-                  {
-                    "title": "Your question? Option1, Option2",
-                    "description": "Example: What color do you like? Red, Green"
-                  },
-                  {
-                    "title": "Help",
-                    "description": "Get quick answers and advanced tips"
-                  }
-                ],
-                "scopes": ["team"]
-              }
-            ]
-          }
-        ],
-        "galleryTabs": [
-          {
-            "configurationUrl": "https://forms.office.com/pages/teamsconfigpage.aspx?lang={locale}&tid={tid}&groupId={groupId}&upn={upn}&teamsTheme={theme}",
-            "scopes": ["groupchat", "team"],
-            "canUpdateConfiguration": false,
-            "context": [
-              "channelTab",
-              "meetingChatTab",
-              "meetingDetailsTab",
-              "meetingSidePanel"
-            ]
-          }
-        ],
         "inputExtensions": [
           {
             "botId": "0af95b67-5890-4306-9c1c-a8591cead09e",
